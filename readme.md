@@ -49,6 +49,8 @@ future goal:
 add more obfuscation to make kecthup harder to find
 frontend and password manager
 scan ports and firewal issues in real-time
+restricted decrypt logic to certain apps and IPs
+automated secure transport of encrypted key to server
 
 
 
