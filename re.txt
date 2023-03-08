@@ -1,0 +1,7 @@
+bcrypt
+hashlib
+argon2
+rsa
+python-dotenv
+sshtunnel
+#mysqlclient
