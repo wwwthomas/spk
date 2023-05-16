@@ -20,6 +20,11 @@ create venv
 python3 -m .
 ```
 
+activate venv
+```sh
+source bin/activate
+```
+
 install requirements
 ```sh
 pip3 install -r re.txt
