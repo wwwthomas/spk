@@ -66,7 +66,7 @@ copy-paste run.sh and derun.sh anywhere
 
 run
 ```sh
- source run.sh
+ sh run.sh
 ```
 
 delete KEY value from .env
@@ -82,7 +82,7 @@ Add back only pepper password in .env
 
 run where you pasted
 ```sh
- source derun.sh
+ sh derun.sh
 ```
 OR
 ```sh
