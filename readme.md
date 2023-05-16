@@ -97,18 +97,19 @@ python3 decrypt.py
 OR use decrypt function as a module from decryptfunction.py
 
 to use decrypt import module:
+```sh
 from decryptfunction import g
 
 return decrypted_data
-
+```
 
 
 
 
 how to hide decrypt.py or derun.sh, and ketchup. #near useless
-
+```sh
 sudo chmod -r library/
-
+```
 
 
 optional:
@@ -159,21 +160,25 @@ If pepper is leaked but ketchup is impossible to find, your key is still encrypt
 #Use Key value in other .emv without storing:
 
 You could set the env variables like this:
-
+```sh
  export PRIVATE_KEY=0X32323
-
+```
 and then read it with os module.
-
+```sh
 import os
 
 private_key=os.getenv("PRIVATE_KEY")
+```
 But this way, environment variable works only for the duration that shell is live. If you close the shell and restart it, you have to set environmental variable again. python-dotenv prevents us from doing this repetitive work.For this create .env file and add variables in this format
-
+```sh
  PRIVATE_KEY=fb6b05d6e75a93e30e22334443379292ccd29f5d815ad93a86ee23e749227
+ ```
 then in the file u want to access anv variables
 
+```sh
 import os
 from dotenv import load_dotenv 
+```
 
 #default directory for .env file is the current directory
 #if you set .env in different directory, put the directory address load_dotenv("directory_of_.env)
@@ -183,7 +188,7 @@ load_dotenv() will set the environment variables from .env and we access with os
    private_key=os.getenv("PRIVATE_KEY")
 
 
-
+```sh
 # import os
 # import subprocess
 # import sys
@@ -193,13 +198,15 @@ load_dotenv() will set the environment variables from .env and we access with os
 #                       env=dict(os.environ, SQSUB_VAR="visible in this subprocess"))
 
 #use as a venv in other projects
+```
 
 
 
 
 #bash commands
+```sh
 #source "/root/saltpepperketchup/bin/activate" && python3 /root/saltpepperketchup/decrypt.py 
-
+```
 
 
 
@@ -219,29 +226,31 @@ sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
 pip3 install mysqlclient
 ```
 
-
+```sh
 CREATE TABLE table (
 	passw nvarchar(50),
 	strenght int
 );
+```
 
+```sh
 INSERT INTO table (passw, strenght)
 
 VALUES
 
 ('fnefeeoio22eb2oi',800);
+```
 
-
-
+```sh
 SELECT passw FROM table;
-
+```
 
 
 
 -then choose a letter in library/ketchups and put your infos
 -and replace letter in spkm.py and decrypt.py  ketchup = d()
 
-
+```sh
 sshtunnel.SSH_TIMEOUT = 5.0
 sshtunnel.TUNNEL_TIMEOUT = 5.0
 
@@ -258,7 +267,7 @@ with sshtunnel.SSHTunnelForwarder(
     )
     # Do stuff
     connection.close()
-
+```
 https://help.pythonanywhere.com/pages/AccessingMySQLFromOutsidePythonAnywhere/
 
 
@@ -277,7 +286,7 @@ https://news.ycombinator.com/item?id=4381905
 
 cookbook for python-dotenv manipulator
 
-
+```sh
 python-dotenv [OPTIONS] COMMAND [ARGS]...
 
 
@@ -307,6 +316,7 @@ python-dotenv [OPTIONS] COMMAND [ARGS]...
        set    Store the given key/value.
 
        unset  Removes the given key.
+```
 
 bash commands;
 
